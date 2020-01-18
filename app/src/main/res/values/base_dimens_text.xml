@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Text size material design-->
+    <dimen name="md_text_size_headline_1_light">96sp</dimen>
+    <dimen name="md_text_size_headline_2_light">60sp</dimen>
+    <dimen name="md_text_size_headline_3_regular">48sp</dimen>
+    <dimen name="md_text_size_headline_4_regular">34sp</dimen>
+    <dimen name="md_text_size_headline_5_regular">24sp</dimen>
+    <dimen name="md_text_size_headline_6_medium">20sp</dimen>
+
+    <dimen name="md_text_size_subtitle_1_regular">16sp</dimen>
+    <dimen name="md_text_size_subtitle_2_medium">14sp</dimen>
+    <dimen name="md_text_size_body_1_regular">16sp</dimen>
+    <dimen name="md_text_size_body_2_regular">14sp</dimen>
+    <dimen name="md_text_size_button_medium">14sp</dimen>
+    <dimen name="md_text_size_caption_regular">12sp</dimen>
+    <dimen name="md_text_size_over_line_regular">10sp</dimen>
+
+    <!--Icon size material design-->
+    <dimen name="material_icon_touch_size_small">36dp</dimen>
+    <dimen name="material_icon_touch_padding_small">8dp</dimen>
+    <dimen name="material_icon_touch_size">48dp</dimen>
+    <dimen name="material_icon_touch_padding">12dp</dimen>
+    <dimen name="material_avatar_size">40dp</dimen>
+
+
+</resources>
