@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSkipPageFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:padding="@dimen/sd_default_margin_x"
+        android:text="Bỏ qua"
+        android:textSize="@dimen/sd_default_font_12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontal1"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:gravity="center"
+        android:text="Hỗ trợ bán hàng chuyên nghiệp"
+        android:textSize="@dimen/sd_default_font_h3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontal12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18"
+        app:layout_constraintBottom_toTopOf="@+id/rllSpecializedMarketing"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32"
+        app:layout_constraintTop_toBottomOf="@+id/rllSpecializedMarketing"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rllSpecializedMarketing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:background="@drawable/bg_rectangle_intro"
+        android:padding="@dimen/sd_default_margin_xx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontal21"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontal22">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentSpecializedMarketingVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.37"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentSpecializedMarketingHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgSpecializedMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/img_thumb_marketing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContentSpecializedMarketingVertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleSpecializedMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgSpecializedMarketing"
+            android:layout_toRightOf="@+id/imgSpecializedMarketing"
+            android:text="Tiếp thị đa kênh"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineContentSpecializedMarketingHorizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentSpecializedMarketingVertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContentSpecializedMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tvTitleSpecializedMarketing"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgSpecializedMarketing"
+            android:layout_toRightOf="@+id/imgSpecializedMarketing"
+            android:text="Quảng bá sản phẩm trên Facebook, Google, Youtube... bằng Google Ads và Ad Plus."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleSpecializedMarketing"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentSpecializedMarketingVertical"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34"
+        app:layout_constraintBottom_toTopOf="@+id/rllAffiliateMarketing"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48"
+        app:layout_constraintTop_toBottomOf="@+id/rllAffiliateMarketing"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rllAffiliateMarketing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:background="@drawable/bg_rectangle_intro"
+        android:padding="@dimen/sd_default_margin_xx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontal31"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontal32"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentAffiliateMarketingVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.37"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentAffiliateMarketingHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAffiliateMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/img_thumb_marketing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContentAffiliateMarketingVertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleAffiliateMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgAffiliateMarketing"
+            android:layout_toRightOf="@+id/imgAffiliateMarketing"
+            android:text="Tiếp thị đa kênh"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineContentAffiliateMarketingHorizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentAffiliateMarketingVertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContentAffiliateMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tvTitleAffiliateMarketing"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgAffiliateMarketing"
+            android:layout_toRightOf="@+id/imgAffiliateMarketing"
+            android:text="Quảng bá sản phẩm trên Facebook, Google, Youtube... bằng Google Ads và Ad Plus."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleAffiliateMarketing"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentAffiliateMarketingVertical"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/rllMultiChannelMarketing"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64"
+        app:layout_constraintTop_toBottomOf="@+id/rllMultiChannelMarketing"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rllMultiChannelMarketing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:background="@drawable/bg_rectangle_intro"
+        android:padding="@dimen/sd_default_margin_xx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontal41"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontal42"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentMultiChannelMarketingVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.37"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentMultiChannelMarketingHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMultiChannelMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/img_thumb_marketing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContentMultiChannelMarketingVertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleMultiChannelMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgMultiChannelMarketing"
+            android:layout_toRightOf="@+id/imgMultiChannelMarketing"
+            android:text="Tiếp thị đa kênh"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineContentMultiChannelMarketingHorizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentMultiChannelMarketingVertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContentMultiChannelMarketing"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tvTitleMultiChannelMarketing"
+            android:layout_marginStart="@dimen/sd_default_margin_xx"
+            android:layout_marginLeft="@dimen/sd_default_margin_xx"
+            android:layout_toEndOf="@+id/imgMultiChannelMarketing"
+            android:layout_toRightOf="@+id/imgMultiChannelMarketing"
+            android:text="Quảng bá sản phẩm trên Facebook, Google, Youtube... bằng Google Ads và Ad Plus."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleMultiChannelMarketing"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentMultiChannelMarketingVertical"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/sd_default_margin_x"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateShopNow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateShopNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sd_default_margin_xx"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginEnd="@dimen/sd_default_margin_x"
+        android:layout_marginRight="@dimen/sd_default_margin_x"
+        android:layout_marginBottom="@dimen/sd_default_margin_x"
+        android:text="Tạo Shop ngay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNextPageFive"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextPageFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:layout_marginBottom="@dimen/sd_default_margin_x"
+        android:text="Đối tác nổi bật"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCreateShopNow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

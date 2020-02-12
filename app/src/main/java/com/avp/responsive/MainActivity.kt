@@ -1,44 +1,27 @@
 package com.avp.responsive
 
-import android.animation.TimeInterpolator
-import android.animation.ValueAnimator
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.animation.LinearInterpolator
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
+import androidx.appcompat.app.AppCompatActivity
+import com.avp.responsive.features.dimension.DimensionActivity
+import com.avp.responsive.features.travelservice.IntergalacticTravelServiceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val constraintSetOne = ConstraintSet()
-    private val constraintSetTwo = ConstraintSet()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        constraintSetOne.clone(constraintParent)
-        constraintSetTwo.clone(this, R.layout.activity_main)
+        initClickListener()
+    }
 
-        departButton.setOnClickListener {
-            val layoutparams =  rocketIcon.layoutParams as ConstraintLayout.LayoutParams
-            val startAngle = layoutparams.circleAngle
-            val endAngle = startAngle + (if (switch1.isChecked) 360 else 180)
+    private fun initClickListener() {
+        btnTravelService.setOnClickListener {
+            startActivity(Intent(this, IntergalacticTravelServiceActivity::class.java))
+        }
 
-            val anim = ValueAnimator.ofFloat(startAngle, endAngle)
-            anim.addUpdateListener {
-                val animatedValue = it.animatedValue as Float
-                val layoutParams = rocketIcon.layoutParams as ConstraintLayout.LayoutParams
-
-                layoutParams.circleAngle = animatedValue
-                rocketIcon.layoutParams = layoutParams
-                rocketIcon.rotation = (animatedValue % 360 - 270)
-            }
-            anim.duration = if (switch1.isChecked) 2000 else 1000
-
-            //6
-            anim.interpolator = LinearInterpolator() as TimeInterpolator?
-            anim.start()
+        btnMoveToDimension.setOnClickListener {
+            startActivity(Intent(this, DimensionActivity::class.java))
         }
     }
 }

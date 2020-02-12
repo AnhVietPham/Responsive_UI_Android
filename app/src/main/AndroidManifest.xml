@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".features.travelservice.IntergalacticTravelServiceActivity" />
+        <activity
+            android:name=".features.dimension.DimensionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SDAppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
     </application>
 
 </manifest>

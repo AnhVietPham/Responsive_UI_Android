@@ -53,4 +53,50 @@
     <dimen name="default_divider_size_large">2dp</dimen>
     <dimen name="default_divider_size">1dp</dimen>
 
+    <dimen name="sd_default_font_h1_xx">40sp</dimen>
+    <dimen name="sd_default_font_h1_x">35sp</dimen>
+    <dimen name="sd_default_font_h1">30sp</dimen>
+    <dimen name="sd_default_font_h2">25sp</dimen>
+    <dimen name="sd_default_font_h3">20sp</dimen>
+    <dimen name="sd_default_font_h4">15sp</dimen>
+    <dimen name="sd_default_font_h6">10sp</dimen>
+    <dimen name="sd_default_font_13sp">13sp</dimen>
+    <dimen name="sd_default_font_12sp">12sp</dimen>
+    <dimen name="sd_default_font_23sp">23sp</dimen>
+
+    <dimen name="sd_default_image_size">12dp</dimen>
+    <dimen name="sd_default_image_size_x">24dp</dimen>
+    <dimen name="sd_default_image_size_xx">48dp</dimen>
+    <dimen name="sd_default_image_size_xxx">60dp</dimen>
+
+    <dimen name="sd_default_margin">4dp</dimen>
+    <dimen name="sd_default_margin_x">8dp</dimen>
+    <dimen name="sd_default_margin_xx">16dp</dimen>
+    <dimen name="sd_default_margin_xxx">32dp</dimen>
+    <dimen name="sd_default_margin_xxxx">64dp</dimen>
+
+    <dimen name="sd_default_padding">4dp</dimen>
+    <dimen name="sd_default_padding_x">8dp</dimen>
+    <dimen name="sd_default_padding_xx">16dp</dimen>
+    <dimen name="sd_default_padding_xxx">32dp</dimen>
+    <dimen name="sd_default_padding_xxxx">64dp</dimen>
+
+    <dimen name="sd_default_status_bar_height">24dp</dimen>
+
+    <dimen name="sd_default_tab_indicator_height">2dp</dimen>
+    <dimen name="sd_default_tab_indicator">8dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+
+    <dimen name="textSmall">14sp</dimen>
+    <dimen name="_6sdp">6.00dp</dimen>
+    <dimen name="_10sdp">10.00dp</dimen>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">-24dp</dimen>
+
+
+    <dimen name="smart_label_edit_white_view_min_height">51dp</dimen>
+
+
 </resources>
