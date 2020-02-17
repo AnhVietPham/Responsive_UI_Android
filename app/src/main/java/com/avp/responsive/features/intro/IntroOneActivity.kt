@@ -1,4 +1,4 @@
-package com.avp.responsive.features.dimension
+package com.avp.responsive.features.intro
 
 import android.graphics.Color
 import android.os.Build
@@ -8,7 +8,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.avp.responsive.R
 
-class DimensionActivity : AppCompatActivity(){
+class IntroOneActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

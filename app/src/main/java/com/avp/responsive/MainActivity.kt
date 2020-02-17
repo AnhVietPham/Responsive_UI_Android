@@ -3,7 +3,7 @@ package com.avp.responsive
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.avp.responsive.features.dimension.DimensionActivity
+import com.avp.responsive.features.intro.IntroOneActivity
 import com.avp.responsive.features.travelservice.IntergalacticTravelServiceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnMoveToDimension.setOnClickListener {
-            startActivity(Intent(this, DimensionActivity::class.java))
+            startActivity(Intent(this, IntroOneActivity::class.java))
         }
     }
 }
