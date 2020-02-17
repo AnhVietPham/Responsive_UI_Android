@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bannerPageOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSkipPageOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_xxx"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:padding="@dimen/sd_default_margin_x"
+        android:text="SKIP"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sd_default_font_12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Anh Viet Pham Title ONE"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalTitle12"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalTitle11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeaderTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Anh Viet Pham Title TWO"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalTitle22"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalTitle21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dotsIndicatorPageOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_xx"
+        android:text="Anh Viet Pham"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderTwo"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalDiscovery11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalDiscovery12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalDiscovery11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalDiscovery12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDiscovery"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalDiscovery12"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalDiscovery11"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalDiscovery11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalDiscovery12"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            >
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineHorizontalContentDiscovery11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2"
+                />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineHorizontalContentDiscovery12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8"
+                />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineVerticalContentDiscovery11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.18"
+                />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineVerticalContentDiscovery12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.82"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Khám phá ngay quyền lợi hấp dẫn"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeStepGranularity="1sp"
+                app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalContentDiscovery11"
+                app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalContentDiscovery12"
+                app:layout_constraintStart_toEndOf="@+id/guideLineVerticalContentDiscovery11"
+                app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalContentDiscovery12"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sd_default_margin_xx"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginTop="@dimen/sd_default_margin_xxx"
+        app:srcCompat="@drawable/img_avatar_page_one"
+        app:layout_constraintEnd_toStartOf="@+id/ivTwo"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_xxx"
+        app:srcCompat="@drawable/img_avatar_page_one"
+        app:layout_constraintEnd_toStartOf="@+id/ivThree"
+        app:layout_constraintStart_toEndOf="@id/ivOne"
+        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_xxx"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        app:srcCompat="@drawable/img_avatar_page_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivTwo"
+        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceTextOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sd_default_margin_xx"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:gravity="center"
+        android:text="500.000"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOne" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceTextTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:gravity="center"
+        android:text="12.000.000"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/ivTwo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceTextThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:gravity="center"
+        android:text="17.000.000"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceTextTwo"
+        app:layout_constraintTop_toBottomOf="@+id/ivThree" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContentTextOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sd_default_margin_xx"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:gravity="center"
+        android:paddingLeft="@dimen/sd_default_margin_x"
+        android:paddingTop="@dimen/sd_default_margin"
+        android:paddingRight="@dimen/sd_default_margin_x"
+        android:paddingBottom="@dimen/sd_default_margin"
+        android:text="Người bán tin tưởng mở Shop kinh doanh"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvContentTextTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextOne" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContentTextTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:gravity="center"
+        android:paddingLeft="@dimen/sd_default_margin_x"
+        android:paddingTop="@dimen/sd_default_margin"
+        android:paddingRight="@dimen/sd_default_margin_x"
+        android:paddingBottom="@dimen/sd_default_margin"
+        android:text="Khách hàng hài lòng khi mua sắm và trải nghiệm"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvContentTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextTwo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContentTextThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_marginEnd="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:gravity="center"
+        android:paddingLeft="@dimen/sd_default_margin_x"
+        android:paddingTop="@dimen/sd_default_margin"
+        android:paddingRight="@dimen/sd_default_margin_x"
+        android:paddingBottom="@dimen/sd_default_margin"
+        android:text="Sản phẩm cung cấp đến mọi phân khúc khách hàng"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sd_default_font_h6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvContentTextTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextThree" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/sd_default_margin_x"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextPageTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextPageTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginLeft="@dimen/sd_default_margin_xx"
+        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:layout_marginBottom="@dimen/sd_default_margin_x"
+        android:text="Làm ơn hãy chọn tôi đi nào!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

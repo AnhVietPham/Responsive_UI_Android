@@ -11,6 +11,8 @@
     <string name="depart">Depart</string>
     <string name="activity_intergalactic_travel_service">Intergalactic Travel Service</string>
     <string name="activity_dimension">Move to DimensionActivity</string>
+    <string name="activity_one">Intro One</string>
+    <string name="activity_two">Intro Two</string>
 
     <string name="warehouse">Large</string>
     <string name="hospital">Nhan Dan 115</string>

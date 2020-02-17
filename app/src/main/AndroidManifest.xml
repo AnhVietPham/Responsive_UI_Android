@@ -22,6 +22,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/SDAppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".features.intro.IntroTwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SDAppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
     </application>
 
 </manifest>

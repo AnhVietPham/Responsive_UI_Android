@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.avp.responsive.features.intro.IntroOneActivity
+import com.avp.responsive.features.intro.IntroTwoActivity
 import com.avp.responsive.features.travelservice.IntergalacticTravelServiceActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -20,8 +21,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, IntergalacticTravelServiceActivity::class.java))
         }
 
-        btnMoveToDimension.setOnClickListener {
+        btnMoveIntroOne.setOnClickListener {
             startActivity(Intent(this, IntroOneActivity::class.java))
+        }
+
+        btnMoveIntroTwo.setOnClickListener {
+            startActivity(Intent(this, IntroTwoActivity::class.java))
         }
     }
 }

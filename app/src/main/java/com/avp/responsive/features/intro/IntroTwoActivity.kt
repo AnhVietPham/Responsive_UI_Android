@@ -8,11 +8,10 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.avp.responsive.R
 
-class IntroOneActivity : AppCompatActivity(){
-
+class IntroTwoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_intro_one)
+        setContentView(R.layout.activity_intro_two)
         if (Build.VERSION.SDK_INT in 19..20) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 setWindowFlag(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true)
