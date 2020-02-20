@@ -112,7 +112,112 @@
         app:layout_constraintStart_toEndOf="@+id/guideLineVertical11"
         app:layout_constraintEnd_toStartOf="@+id/guideLineVertical12"
         >
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentVertical11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"
+            />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageVertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.47"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentVertical12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContentHorizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageHorizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle1Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle1Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription1Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription1Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentVertical11"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineContentHorizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineImageHorizontal1"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineImageVertical1"
+            app:srcCompat="@drawable/ic_intro_three"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Đăng ký mở Shop dễ dàng, nhanh chóng chỉ 2 bước và 0 đồng."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:layout_constraintHeight_percent="0.27"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineDescription1Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineDescription1Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentVertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContentVertical12"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Bán hàng miễn phí"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineTitle1Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineTitle1Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContentVertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContentVertical12"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -125,6 +230,116 @@
         app:layout_constraintEnd_toStartOf="@+id/guideLineVertical14"
         >
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent2Vertical11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent2Vertical12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent2Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageVertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.47"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageHorizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle2Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle2Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription2Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription2Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent2Vertical11"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineContent2Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineImageHorizontal2"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineImageVertical2"
+            app:srcCompat="@drawable/ic_intro_three"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Tiềm năng bán hàng không giới hạn, tập trung đúng phân khúc."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:layout_constraintHeight_percent="0.27"
+
+            app:layout_constraintTop_toBottomOf="@+id/guideLineDescription2Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineDescription2Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent2Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent2Vertical12"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Khách hàng đa dạng"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineTitle2Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineTitle2Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent2Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent2Vertical12"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -137,6 +352,114 @@
         app:layout_constraintEnd_toStartOf="@+id/guideLineVertical12"
         >
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent3Vertical11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageVertical3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.47"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageHorizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent3Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent3Vertical12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle3Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle3Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription3Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription3Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineImageHorizontal3"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineImageVertical3"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent3Vertical11"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineContent3Horizontal11"
+            app:srcCompat="@drawable/ic_intro_three"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Vận chuyển chuyên nghiệp, giao nhận hàng khắp 63 tỉnh thành."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:layout_constraintHeight_percent="0.27"
+
+            app:layout_constraintTop_toBottomOf="@+id/guideLineDescription3Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineDescription3Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent3Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent3Vertical12"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Giao nhận toàn quốc"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineTitle3Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineTitle3Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent3Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent3Vertical12"
+            />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -148,6 +471,111 @@
         app:layout_constraintStart_toEndOf="@+id/guideLineVertical13"
         app:layout_constraintEnd_toStartOf="@+id/guideLineVertical14"
         >
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent4Vertical11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageVertical4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.47"
+            />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineImageHorizontal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent4Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineContent4Vertical12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle4Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTitle4Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription4Horizontal11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDescription4Horizontal12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineImageHorizontal4"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineImageVertical4"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent4Vertical11"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineContent4Horizontal11"
+            app:srcCompat="@drawable/ic_intro_three"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Đa dạng các tính năng và dịch vụ quảng cáo tiếp cận khách hàng mục tiêu."
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:layout_constraintHeight_percent="0.27"
+
+            app:layout_constraintTop_toBottomOf="@+id/guideLineDescription4Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineDescription4Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent4Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent4Vertical12"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Kinh doanh hiệu quả"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            app:layout_constraintTop_toBottomOf="@+id/guideLineTitle4Horizontal11"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineTitle4Horizontal12"
+            app:layout_constraintStart_toEndOf="@+id/guideLineContent4Vertical11"
+            app:layout_constraintEnd_toStartOf="@+id/guideLineContent4Vertical12"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
