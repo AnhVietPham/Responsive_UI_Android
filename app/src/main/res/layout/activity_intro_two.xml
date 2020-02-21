@@ -99,17 +99,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/dotsIndicatorPageOne"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_xx"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalTitle32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dotsIndicatorPageOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
         android:text="Anh Viet Pham"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeaderTwo"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalTitle31"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalTitle32"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -207,178 +226,288 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalImage11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalImage12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalPrice11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalPrice12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalContent11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalContent12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalViewLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalBottomButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalBottomButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalImage16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"
+        />
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivOne"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sd_default_margin_xx"
-        android:layout_marginLeft="@dimen/sd_default_margin_xx"
-        android:layout_marginTop="@dimen/sd_default_margin_xxx"
-        app:srcCompat="@drawable/img_avatar_page_one"
-        app:layout_constraintEnd_toStartOf="@+id/ivTwo"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
-        />
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalImage12"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage12"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage11"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalImage11"
+        app:srcCompat="@drawable/img_avatar_page_one" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivTwo"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_xxx"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/img_avatar_page_one"
-        app:layout_constraintEnd_toStartOf="@+id/ivThree"
-        app:layout_constraintStart_toEndOf="@id/ivOne"
-        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage14"
+        app:layout_constraintStart_toEndOf="@id/guideLineVerticalImage13"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalImage11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalImage12"
         />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivThree"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_xxx"
-        android:layout_marginEnd="@dimen/sd_default_margin_xx"
-        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/img_avatar_page_one"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivTwo"
-        app:layout_constraintTop_toBottomOf="@+id/cvDiscovery"
+        app:layout_constraintStart_toEndOf="@id/guideLineVerticalImage15"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage16"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalImage11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalImage12"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPriceTextOne"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sd_default_margin_xx"
-        android:layout_marginLeft="@dimen/sd_default_margin_xx"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_height="0dp"
         android:gravity="center"
         android:text="500.000"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h4"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextTwo"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivOne" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage12"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage11"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalPrice11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalPrice12" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPriceTextTwo"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_height="0dp"
         android:gravity="center"
         android:text="12.000.000"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h4"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextThree"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvPriceTextOne"
-        app:layout_constraintTop_toBottomOf="@+id/ivTwo" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage14"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage13"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalPrice11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalPrice12"
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvPriceTextThree"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
-        android:layout_marginEnd="@dimen/sd_default_margin_xx"
-        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:layout_height="0dp"
         android:gravity="center"
         android:text="17.000.000"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h4"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvPriceTextTwo"
-        app:layout_constraintTop_toBottomOf="@+id/ivThree" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage16"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage15"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalPrice11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalPrice12"
+
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvContentTextOne"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/sd_default_margin_xx"
-        android:layout_marginLeft="@dimen/sd_default_margin_xx"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:paddingLeft="@dimen/sd_default_margin_x"
-        android:paddingTop="@dimen/sd_default_margin"
-        android:paddingRight="@dimen/sd_default_margin_x"
-        android:paddingBottom="@dimen/sd_default_margin"
         android:text="Người bán tin tưởng mở Shop kinh doanh"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h6"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvContentTextTwo"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextOne" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage12"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalContent12"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalContent11" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvContentTextTwo"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:paddingLeft="@dimen/sd_default_margin_x"
-        android:paddingTop="@dimen/sd_default_margin"
-        android:paddingRight="@dimen/sd_default_margin_x"
-        android:paddingBottom="@dimen/sd_default_margin"
         android:text="Khách hàng hài lòng khi mua sắm và trải nghiệm"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h6"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvPriceTextThree"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvContentTextOne"
-        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextTwo" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalContent12"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage14"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage13"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalContent11"
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvContentTextThree"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/sd_default_margin_x"
-        android:layout_marginEnd="@dimen/sd_default_margin_xx"
-        android:layout_marginRight="@dimen/sd_default_margin_xx"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:paddingLeft="@dimen/sd_default_margin_x"
-        android:paddingTop="@dimen/sd_default_margin"
-        android:paddingRight="@dimen/sd_default_margin_x"
-        android:paddingBottom="@dimen/sd_default_margin"
         android:text="Sản phẩm cung cấp đến mọi phân khúc khách hàng"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/sd_default_font_h6"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tvContentTextTwo"
-        app:layout_constraintTop_toBottomOf="@+id/tvPriceTextThree" />
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage16"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage15"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalContent12"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalContent11"
+        />
 
     <View
+        android:id="@+id/viewLine"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="@dimen/sd_default_margin_x"
         android:background="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btnNextPageTwo"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalViewLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNextPageTwo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@android:color/holo_red_light"
-        android:layout_marginLeft="@dimen/sd_default_margin_xx"
-        android:layout_marginRight="@dimen/sd_default_margin_xx"
-        android:layout_marginBottom="@dimen/sd_default_margin_x"
         android:text="Làm ơn hãy chọn tôi đi nào!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="@dimen/md_text_size_button_medium"
+        app:layout_constraintTop_toBottomOf="@+id/guideLineHorizontalBottomButton11"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineHorizontalBottomButton12"
+        app:layout_constraintStart_toEndOf="@+id/guideLineVerticalImage11"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVerticalImage16"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
